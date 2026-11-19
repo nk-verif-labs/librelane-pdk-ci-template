@@ -1,6 +1,0 @@
-{
-  "DESIGN_NAME": "ready_valid_pipe",
-  "VERILOG_FILES": ["dir::src/ready_valid_pipe.v"],
-  "CLOCK_PORT": "clk",
-  "CLOCK_PERIOD": 20.0
-}
