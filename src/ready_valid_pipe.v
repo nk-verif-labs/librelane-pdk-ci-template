@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module ready_valid_pipe #(parameter WIDTH = 8) (
   input wire clk, input wire rst_n,
   input wire s_valid, output wire s_ready, input wire [WIDTH-1:0] s_data,
