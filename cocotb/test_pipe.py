@@ -4,7 +4,7 @@ from cocotb.triggers import RisingEdge
 
 @cocotb.test()
 async def test_smoke(dut):
-    cocotb.start_soon(Clock(dut.clk, 10, units="ns").start())
+    cocotb.start_soon(Clock(dut.clk, 10, unit="ns").start())
     dut.rst_n.value = 0; dut.s_valid.value = 0; dut.m_ready.value = 1; dut.s_data.value = 0
     for _ in range(3): await RisingEdge(dut.clk)
     dut.rst_n.value = 1; dut.s_valid.value = 1; dut.s_data.value = 0xA5

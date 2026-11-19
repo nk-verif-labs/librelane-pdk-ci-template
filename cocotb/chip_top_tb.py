@@ -1,6 +1,6 @@
 import glob, os
 from pathlib import Path
-from cocotb.runner import get_runner
+from cocotb_tools.runner import get_runner
 
 root = Path(__file__).resolve().parent.parent
 gl = os.getenv("GL") == "1"
